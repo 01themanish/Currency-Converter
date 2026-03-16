@@ -14,8 +14,8 @@ body{
     background-color: #fff;
     padding: 2rem;
     border-radius: 1rem;
-    min-height: 39vh;
-    width: 35vh;
+    min-height: 45vh;
+    width: 45vh;
 }
 
 form{
@@ -66,6 +66,7 @@ form input{
     margin: 2rem 0 2rem 0;
 }
 form button{
+    margin-top: 1.5rem;
     height: 3rem;
     background: linear-gradient(45deg,#ff512f,#dd2476);
     color: #fff;
@@ -77,4 +78,18 @@ form button:hover{
 }
 form button:active{
     transform:scale(0.95);
+}
+
+.swap{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.swap:hover{
+    transform:rotate(180deg);
+}
+
+#rateChart{
+    margin-top:20px;
+    max-height:200px;
 }

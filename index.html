@@ -27,7 +27,7 @@
                         <select name="from"></select>
                     </div>
                 </div>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left swap"></i>
                 <div class="to">
                     <p>To</p>
                     <div class="select-container">
@@ -37,10 +37,12 @@
                 </div>
             </div>
             <div class="msg">1USD = 80INR</div>
+            <canvas id="rateChart"></canvas>
             <button>Get Exchange Rate</button>
         </form>
     </div>
     <script src="codes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 
