@@ -4,18 +4,37 @@
 }
 
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg,#1f4037,#99f2c8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    font-family: "Poppins", sans-serif;
 }
 .container{
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 1rem;
-    min-height: 45vh;
-    width: 45vh;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(20px);
+    padding:2rem;
+    border-radius:20px;
+    min-height:40vh;
+    width:360px;
+    color:#ffffff;
+    box-shadow:0 8px 32px rgba(0,0,0,0.35);
+    border:1px solid rgba(255,255,255,0.2);
+}
+h2{
+    text-align:center;
+    color:white;
+    letter-spacing:1px;
+}
+
+form input{
+    border:1px solid rgba(255,255,255,0.4);
+    font-size:1rem;
+    height:3rem;
+    padding-left:0.5rem;
+    background:rgba(255,255,255,0.9);
+    color:#000;
 }
 
 form{
@@ -35,6 +54,11 @@ form input{
     padding-left: 0.5rem;
 }
 
+.select-container select{
+    background:transparent;
+    color:#ffffff;
+    font-weight:500;
+}
 .dropdown{
     display: flex;
     justify-content: space-between;
@@ -50,12 +74,13 @@ form input{
     max-width: 2rem;
 }
 .select-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 6rem;
-    border-radius: 0.5rem;
-    border: 1px solid lightgray;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:7rem;
+    border-radius:0.5rem;
+    border:1px solid rgba(255,255,255,0.3);
+    background:rgba(255,255,255,0.2);
 }
 .select-container select{
     font-size: 1rem;
@@ -63,7 +88,10 @@ form input{
 }
 
 .msg{
-    margin: 2rem 0 2rem 0;
+    margin:2rem 0;
+    text-align:center;
+    font-weight:600;
+    color:#ffffff;
 }
 form button{
     margin-top: 1.5rem;
@@ -74,7 +102,7 @@ form button{
 }
 form button:hover{
     transform:translateY(-3px);
-    box-shadow:0 6px 15px rgba(0,0,0,0.3);
+    box-shadow:0 6px px rgba(0,0,0,0.3);
 }
 form button:active{
     transform:scale(0.95);
@@ -90,6 +118,7 @@ form button:active{
 }
 
 #rateChart{
-    margin-top:20px;
-    max-height:200px;
+    background:rgba(255,255,255,0.9);
+    border-radius:10px;
+    padding:10px;
 }
